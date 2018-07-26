@@ -11,10 +11,3 @@ Ingredient.destroy_all
 ingredients['drinks'].each do |ingredient|
   Ingredient.create(name: ingredient.values.join)
 end
-
-puts "Done!"
-
-20.times do
-  Cocktails.create(name: Faker::Address.city)
-
-end
