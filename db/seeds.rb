@@ -13,3 +13,8 @@ ingredients['drinks'].each do |ingredient|
 end
 
 puts "Done!"
+
+20.times do
+  Cocktails.create(name: Faker::Address.city)
+
+end
