@@ -27,5 +27,5 @@ a = File.read(file)
 cocktail_names = JSON.parse(a)
 
 cocktail_names.each do |cocktail|
-  Cocktail.create(name: cocktail['name'])
+  cocktail = Cocktail.create(name: cocktail['name'])
 end
