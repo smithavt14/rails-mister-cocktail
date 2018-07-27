@@ -1,8 +1,8 @@
 <div class="navbar-buffer-white">
 </div>
 <div class="show-wrapper">
+  <h1><%= @cocktail.name %></h1>
   <div class="show-container">
-    <h1><%= @cocktail.name %></h1>
     <% @cocktail.doses.each do |d| %>
       <p><%= d.description + " - " + d.ingredient.name%></p>
     <% end %>
