@@ -46,6 +46,8 @@ gem 'simple_form'
 
 gem 'autoprefixer-rails'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
