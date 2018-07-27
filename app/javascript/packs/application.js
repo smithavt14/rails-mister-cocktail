@@ -8,3 +8,9 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+import 'bootstrap';
+
+import { initUpdateNavbarOnScroll } from '../components/navbar';
+initUpdateNavbarOnScroll();
+
+console.log("Yo This is working?")

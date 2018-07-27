@@ -1,8 +1,8 @@
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.2);
-  background: white;
-  transition: all 0.3s ease;
+  background-color: transparent;
+  transition: 0.5s background-color ease;
   height: 70px;
   padding: 0px 10px;
   display: flex;
@@ -12,14 +12,24 @@
   top: 0px;
   width: 100%;
   z-index: 2;
+  filter: invert(100%);
+  color: white;
+
 } a {
-  color: black;
   font-size: 15px;
   text-decoration: none;
-} a:hover {
   color: black;
+
+} a:hover {
   text-decoration: none;
   text-shadow: 1px 1px 1px gray;
+  color: white;
+}
+
+.navbar-wagon-white {
+  background-color: white;
+  color: black;
+  filter: invert(0%);
 }
 
 .navbar-link-left {
@@ -31,3 +41,7 @@
   text-align: left;
   margin-left: 30px;
 }
+
+
+
+
