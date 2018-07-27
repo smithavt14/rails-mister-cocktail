@@ -1,18 +1,19 @@
 .card {
   background-color: white;
   border: 1px solid black;
-  height: 25vh;
+  height: 30vh;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   color: white;
   position: relative;
-  margin-top: 20px;
+  margin: 20px 0px;
+  border-radius: 5px;
 }
 
 .card-category {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 15px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
