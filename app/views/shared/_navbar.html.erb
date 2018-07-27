@@ -1,7 +1,11 @@
 <div class="navbar-wagon">
-  <%= link_to root_path do  %>
-    <i class="fas fa-cocktail"></i>
+  <div class="navbar-link-left">
+    <%= link_to "Mix it up", root_path %>
+  </div>
+  <%= link_to root_path do %>
+    <%= image_tag "bartender_icon.png", alt: "bartender_icon", width: 70 %>
   <% end %>
-  <%= link_to "Mix a New Cocktail", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-  <!-- Avatar with dropdown menu -->
+  <div class="navbar-link-right">
+    <%= link_to "Create a cocktail", new_cocktail_path %>
+  </div>
 </div>
