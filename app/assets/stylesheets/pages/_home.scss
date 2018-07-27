@@ -13,3 +13,41 @@
   width: 100vw;
   height: 75vh;
 }
+
+.info-graph {
+  background-color: #F4F4F4;
+  height: 75vh;
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  font-family: Lato;
+  font-weight: lighter;
+} h2 {
+  margin: 40px 0px;
+}
+
+.info-graph-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-graph-container-object {
+  height: 40vh;
+  width: 30vw;
+  text-align: center;
+  margin: 15px;
+  padding: 35px 10px;
+}
+
+.info-graph-container-object-icon {
+  font-size: 50px;
+  color: #FF0000;
+  text-shadow: 0 0 10px #FF0000,
+}
+
+.info-graph-container-object-text {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+
