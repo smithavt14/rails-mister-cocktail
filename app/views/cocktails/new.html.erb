@@ -1,6 +1,13 @@
-<div class="wrapper">
-  <%= simple_form_for (@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.submit "add a new cocktail", class: "btn btn-primary" %>
-  <% end %>
+<div class="navbar-buffer-white">
+</div>
+<div class="new-wrapper">
+  <div class="new-container">
+    <%= simple_form_for (@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit "add a new cocktail", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>

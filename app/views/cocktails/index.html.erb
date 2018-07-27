@@ -12,13 +12,15 @@
           <p>Browse for your favorite drinks and recipes.</p>
         </div>
       </div>
-      <div class="info-graph-container-object">
-        <div class="info-graph-container-object-icon">
-          <i class="fas fa-plus"></i>
-        </div>
-        <div class="info-graph-container-object-text">
-          <p>Can't find a drink? Add a new one by clicking the (+) icon above.</p>
-        </div>
+      <%= link_to new_cocktail_path do %>
+        <div class="info-graph-container-object">
+          <div class="info-graph-container-object-icon">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="info-graph-container-object-text">
+            <p>Can't find a drink? Add a new one by clicking the (+) icon above.</p>
+          </div>
+        <% end %>
       </div>
       <div class="info-graph-container-object">
         <div class="info-graph-container-object-icon">
@@ -35,10 +37,10 @@
       <% @cocktails.each do |cocktail| %>
         <%= link_to cocktail_path(cocktail) do  %>
           <div class="col-xs-12 col-sm-4">
-            <div class="card">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo? ? (cl_image_path cocktail.photo, height: 250, width: 400, crop: :fill) : (image_path 'bartender_icon.png') %>');">
               <div class="card-category"><%= cocktail.name %></div>
               <div class="card-description">
-                <p>A nice drink...</p>
+                <p><%= cocktail.description %></p>
               </div>
             </div>
           </div>
